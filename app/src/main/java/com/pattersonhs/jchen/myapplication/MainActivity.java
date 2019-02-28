@@ -30,11 +30,13 @@ public class MainActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(AlarmClock.ACTION_SET_ALARM);
-                i.putExtra(AlarmClock.EXTRA_MESSAGE,"NEW ALARM");
-                i.putExtra(AlarmClock.EXTRA_HOUR,10);
-                i.putExtra(AlarmClock.EXTRA_MINUTES,45);
-                startActivity(i);
+                Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM);
+                    //intent.putExtra(AlarmClock.EXTRA_MESSAGE,"NEW ALARM");
+                    //intent.putExtra(AlarmClock.EXTRA_HOUR,10);
+                    //intent.putExtra(AlarmClock.EXTRA_MINUTES,45);
+                //if (intent .resolveActivity(getPackageManager()) != null) {
+                    startActivity(intent);
+                //}
             }
         });
     }
