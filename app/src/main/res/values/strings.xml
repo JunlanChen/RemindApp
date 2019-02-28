@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Remind</string>
+    <string name="wakeUpTime">Wake Up Time</string>
+    <string name="travelTime">Estimate travel time to school</string>
+    <string name="submitButton">Submit</string>
+</resources>
+
