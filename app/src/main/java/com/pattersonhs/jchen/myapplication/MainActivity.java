@@ -31,12 +31,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(AlarmClock.ACTION_SET_ALARM);
-                    //intent.putExtra(AlarmClock.EXTRA_MESSAGE,"NEW ALARM");
-                    //intent.putExtra(AlarmClock.EXTRA_HOUR,10);
-                    //intent.putExtra(AlarmClock.EXTRA_MINUTES,45);
-                //if (intent .resolveActivity(getPackageManager()) != null) {
+                    intent.putExtra(AlarmClock.EXTRA_MESSAGE,"NEW ALARM");
+                    intent.putExtra(AlarmClock.EXTRA_HOUR,8);
+                    intent.putExtra(AlarmClock.EXTRA_MINUTES,40);
+                if (intent .resolveActivity(getPackageManager()) != null) {
                     startActivity(intent);
-                //}
+                }
             }
         });
     }
