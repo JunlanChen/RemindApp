@@ -21,7 +21,13 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/submitButton"
-        android:id="@+id/submitButton"/>
+        android:text="@string/alarmSubmitButton"
+        android:id="@+id/alarmSubmitButton"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textSubmitButton"
+        android:id="@+id/textSubmitButton"/>
 
 </LinearLayout>

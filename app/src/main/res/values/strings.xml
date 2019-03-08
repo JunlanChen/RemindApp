@@ -2,6 +2,7 @@
     <string name="app_name">Remind</string>
     <string name="wakeUpTime">Wake Up Time</string>
     <string name="travelTime">Estimate travel time to school</string>
-    <string name="submitButton">Submit</string>
+    <string name="alarmSubmitButton">Alarm Submit</string>
+    <string name="textSubmitButton">Text Message Submit</string>
 </resources>
 
