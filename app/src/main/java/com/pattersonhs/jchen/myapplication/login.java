@@ -28,21 +28,21 @@ public class login extends AppCompatActivity {
 
         password = passwordEdit.getText().toString().trim();
         username = usernameEdit.getText().toString().trim();
+        toastMessageID = R.string.wrongPassUser;
 
         loginSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (passwordEdit.equals("12345") && usernameEdit.equals("admain") )
+                if (usernameEdit.equals("12345") && passwordEdit.equals("admin") )
                 {
-                    Intent Intent1 = new Intent(login.this, MainActivity.cla        ss);
+                    Intent Intent1 = new Intent(login.this, MainActivity.class);
                     startActivity(Intent1);
                 }
                 else
                 {
-                    toastMessageID = R.string.wrongPassUser;
                     Toast.makeText(login.this,toastMessageID,Toast.LENGTH_SHORT).show();
-                    Intent Intent1 = new Intent(login.this, MainActivity.class);
-                    startActivity(Intent1);
+                    //Intent Intent1 = new Intent(login.this, MainActivity.class);
+                    //startActivity(Intent1);
                 }
 
             }
