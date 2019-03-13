@@ -33,7 +33,7 @@ public class login extends AppCompatActivity {
         loginSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (usernameEdit.equals("12345") && passwordEdit.equals("admin") )
+                if (usernameEdit.equals("admin") && passwordEdit.equals("12345") )
                 {
                     Intent Intent1 = new Intent(login.this, MainActivity.class);
                     startActivity(Intent1);
@@ -41,8 +41,8 @@ public class login extends AppCompatActivity {
                 else
                 {
                     Toast.makeText(login.this,toastMessageID,Toast.LENGTH_SHORT).show();
-                    //Intent Intent1 = new Intent(login.this, MainActivity.class);
-                    //startActivity(Intent1);
+                    Intent Intent1 = new Intent(login.this, MainActivity.class);
+                    startActivity(Intent1);
                 }
 
             }
