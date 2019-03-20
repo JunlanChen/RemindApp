@@ -8,40 +8,42 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class login extends AppCompatActivity {
+
+public class loginActvity extends AppCompatActivity {
+    User user;
     EditText usernameEdit;
     EditText passwordEdit;
     Button loginSubmit;
     int toastMessageID;
-    String password;
-    String username;
+    String typedPassword;
+    String typedUsername;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        
         usernameEdit = (EditText) findViewById(R.id.usernameEdit);
         passwordEdit = (EditText) findViewById(R.id.passwordEdit);
         loginSubmit = (Button) findViewById(R.id.loginSubmit);
 
-        password = passwordEdit.getText().toString().trim();
-        username = usernameEdit.getText().toString().trim();
+        typedPassword = passwordEdit.getText().toString().trim();
+        typedUsername = usernameEdit.getText().toString().trim();
         toastMessageID = R.string.wrongPassUser;
 
         loginSubmit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (usernameEdit.equals("admin") && passwordEdit.equals("12345") )
+                if (usernameEdit.equals("stu1") && passwordEdit.equals("12345") )
                 {
-                    Intent Intent1 = new Intent(login.this, MainActivity.class);
+                    Intent Intent1 = new Intent(loginActvity.this, MainActivity.class);
                     startActivity(Intent1);
                 }
                 else
                 {
-                    Toast.makeText(login.this,toastMessageID,Toast.LENGTH_SHORT).show();
-                    Intent Intent1 = new Intent(login.this, MainActivity.class);
+                    Toast.makeText(loginActvity.this,toastMessageID,Toast.LENGTH_SHORT).show();
+                    Intent Intent1 = new Intent(loginActvity.this, MainActivity.class);
                     startActivity(Intent1);
                 }
 
