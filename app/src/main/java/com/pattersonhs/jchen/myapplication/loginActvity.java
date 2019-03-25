@@ -23,11 +23,12 @@ public class loginActvity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        
         usernameEdit = (EditText) findViewById(R.id.usernameEdit);
         passwordEdit = (EditText) findViewById(R.id.passwordEdit);
         loginSubmit = (Button) findViewById(R.id.loginSubmit);
 
+        user.setPassword("12345");
+        user.setUsername("stu1");
         typedPassword = passwordEdit.getText().toString().trim();
         typedUsername = usernameEdit.getText().toString().trim();
         toastMessageID = R.string.wrongPassUser;
