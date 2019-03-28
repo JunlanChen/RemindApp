@@ -27,8 +27,8 @@ public class loginActvity extends AppCompatActivity {
         passwordEdit = (EditText) findViewById(R.id.passwordEdit);
         loginSubmit = (Button) findViewById(R.id.loginSubmit);
 
-        user.setPassword("12345");
-        user.setUsername("stu1");
+        //user.setPassword("12345");
+       // user.setUsername("stu1");
         typedPassword = passwordEdit.getText().toString().trim();
         typedUsername = usernameEdit.getText().toString().trim();
         toastMessageID = R.string.wrongPassUser;
